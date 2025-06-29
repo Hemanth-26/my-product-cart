@@ -8,7 +8,7 @@ import CartPage from "./pages/CartPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/my-product-cart">
       <Header />
       <Routes>
         <Route path="/" element={<LandingPage />} />
