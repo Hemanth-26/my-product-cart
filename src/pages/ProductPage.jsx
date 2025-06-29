@@ -38,8 +38,9 @@ export default function ProductPage() {
   }, [id, productFromRedux]);
 
   const handleAddToCart = () => {
-    const productWithQty = { ...product, quantity };
-    dispatch(addToCart(productWithQty));
+    // const productWithQty = { ...product, quantity };
+    // dispatch(addToCart(productWithQty));
+    dispatch(addToCart(product));
   };
 
   const increaseQty = () => setQuantity(quantity + 1);
@@ -60,9 +61,9 @@ export default function ProductPage() {
         <span className="fe-6 cursor-pointer" onClick={() => navigate(-1)}>
           <i className="fi fi-rr-arrow-left me-3"></i>
         </span>
-        {totalQuantity > 0 ? (
+        {cartItem?.quantity > 0 ? (
           <span className="badge bg-primary fs-6">
-            Items in Cart: {totalQuantity}
+            Items in Cart: {cartItem?.quantity}
           </span>
         ) : null}
       </div>
