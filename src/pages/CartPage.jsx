@@ -94,7 +94,7 @@ export default function CartPage() {
                 Total:
               </td>
               <td colSpan="2" className="fw-bold">
-                ₹ {calculateTotal()}
+                ₹ {calculateTotal()?.toFixed(2)}
               </td>
             </tr>
           </tbody>

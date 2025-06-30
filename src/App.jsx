@@ -9,12 +9,14 @@ import CartPage from "./pages/CartPage";
 function App() {
   return (
     <Router basename="/my-product-cart">
-      <Header />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/product/:id" element={<ProductPage />} />
-        <Route path="/cart" element={<CartPage />} />
-      </Routes>
+      <div className="main">
+        <Header />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/product/:id" element={<ProductPage />} />
+          <Route path="/cart" element={<CartPage />} />
+        </Routes>
+      </div>
       <Footer />
     </Router>
   );
