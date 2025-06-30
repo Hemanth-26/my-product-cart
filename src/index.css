@@ -51,18 +51,18 @@ body {
   font-family: "Montserrat", sans-serif;
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 375px) {
-    font-size: 6px !important;
+    font-size: 10px !important;
   }
   @media only screen and (min-width: 375px) and (max-width: 600px) {
-    font-size: 8px !important;
+    font-size: 12px !important;
   }
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
-    font-size: 10px !important;
+    font-size: 14px !important;
   }
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
