@@ -107,6 +107,13 @@ button:focus-visible {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #213547;
+    color: #ffffff;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
