@@ -47,29 +47,53 @@ html,
 body {
   min-height: 100vh;
   margin: 0;
-  /* background-color: #eae7dc !important; */
   font-family: "Montserrat", sans-serif;
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 375px) {
+}
+
+/* Extra small devices (phones, max 375px) */
+@media only screen and (max-width: 375px) {
+  html,
+  body {
     font-size: 10px !important;
   }
-  @media only screen and (min-width: 375px) and (max-width: 600px) {
+}
+
+/* Small devices (phones >375px to 600px) */
+@media only screen and (min-width: 376px) and (max-width: 600px) {
+  html,
+  body {
     font-size: 12px !important;
   }
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (600px to 767px) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  html,
+  body {
     font-size: 14px !important;
   }
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
+}
+
+/* Large devices (768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  html,
+  body {
     font-size: 14px !important;
   }
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  html,
+  body {
     font-size: 14px !important;
   }
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
+}
+
+/* XXL devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  html,
+  body {
     font-size: 16px !important;
   }
 }
